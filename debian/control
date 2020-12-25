@@ -1,0 +1,51 @@
+Source: mate-tweak
+Section: admin
+Priority: optional
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Uploaders: Martin Wimpress <code@ubuntu-mate.org>,
+           Mike Gabriel <sunweaver@debian.org>,
+           Vangelis Mouhtsis <vangelis@gnugr.org>,
+Build-Depends: debhelper-compat (= 13),
+               dh-python,
+               python3,
+               python3-distutils-extra,
+               python3-setuptools,
+Standards-Version: 4.5.1
+Rules-Requires-Root: no
+Homepage: https://github.com/ubuntu-mate/mate-tweak
+Vcs-Browser: https://salsa.debian.org/debian-mate-team/mate-tweak
+Vcs-Git: https://salsa.debian.org/debian-mate-team/mate-tweak.git
+
+Package: mate-tweak
+Architecture: all
+Depends: dconf-cli,
+         gir1.2-gtk-3.0,
+         gir1.2-notify-0.7,
+         mate-panel (>= 1.18.0),
+         mesa-utils,
+         python3 (>= 3.3),
+         python3-distro,
+         python3-gi,
+         python3-psutil,
+         python3-setproctitle,
+         x11-xserver-utils,
+         ${misc:Depends},
+         ${python3:Depends},
+Recommends: mate-indicator-applet (>= 1.18.0),
+Suggests: compton,
+          ayatana-indicator-application | indicator-application,
+          ayatana-indicator-datetime | indicator-datetime,
+          ayatana-indicator-messages | indicator-messages,
+          ayatana-indicator-sound | indicator-sound,
+          ayatana-indicator-session | indicator-session,
+          ayatana-indicator-power | indicator-power,
+Description: MATE desktop tweak tool
+ Configures some aspects of the MATE desktop not exposed via the
+ MATE Control Center applets.
+ .
+ Settings that can be handled via MATE Tweak:
+ .
+   - Show/hide standard desktop icons
+   - Panel fine-tuning (icon visibility, in menus and on buttons,
+     icon size, button labelling, contex menus, etc.)
+   - Window manager fine-tuning

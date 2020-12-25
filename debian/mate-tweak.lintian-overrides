@@ -1,0 +1,2 @@
+# we know that the referenced window managers are not in the mate-tweak package itself
+mate-tweak: desktop-command-not-in-package usr/share/applications/marco-no-composite.desktop marco

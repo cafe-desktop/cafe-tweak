@@ -1,0 +1,549 @@
+mate-tweak (21.04.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Bump to Standards-Version: 4.5.1. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 04 Dec 2020 10:15:14 +0100
+
+mate-tweak (20.10.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release. (LP: #1894386)
+  * debian/patches:
+    + Drop 1000_avoid_killing_brisk_unnecessarily.patch. Applied upstream.
+    + Drop 1001_adhere_to_hig.patch. Applied upstream.
+    + Drop 1002_ensure_object_names_are_distinct.patch. Applied upstream.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump DH compat level to version 13.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 29 Sep 2020 18:02:17 +0200
+
+mate-tweak (20.04.0-2) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/patches:
+    + Add 1000_avoid_killing_brisk_unnecessarily.patch. Avoid killing Brisk Menu
+      unnecessarily. (LP: #1724262)
+    + Add 1001_adhere_to_hig.patch. Set spacing in confirm dialog to 12.
+      (LP: #1872152)
+    + Add 1002_ensure_object_names_are_distinct.patch. Ensure object names are
+      distinct and consistent between .panel and .layout files. (LP: #1872255)
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 16 Apr 2020 09:22:44 +0200
+
+mate-tweak (20.04.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 14 Feb 2020 21:00:41 +0100
+
+mate-tweak (19.10.4-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Add Ayatana Indicators as alternatives to S (mate-tweak).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 02 Sep 2019 16:43:00 +0200
+
+mate-tweak (19.10.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/{compat,control}:
+    + Use debhelper-compat notation. Bump to DH compat level version 12.
+  * debian/control:
+    + Bump Standards-Version: to 4.4.0. No changes needed.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 02 Aug 2019 16:19:38 +0200
+
+mate-tweak (18.10.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release. (LP: #1767718, #1796343).
+  * debian/control:
+    + Bump Standards-Version: to 4.2.1. No changes needed.
+    + Drop ancient X-Python3-Version: field.
+  * debian/upstream/metadata:
+    + Add file. Comply with DEP-12.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 01 Oct 2018 10:11:26 +0200
+
+mate-tweak (18.04.16-2) unstable; urgency=medium
+
+  * debian/control:
+    + Update Vcs-*: fields. Package has been migrated to salsa.debian.org.
+    + Bump Standards-Version: to 4.1.4. No changes needed.
+    + Drop pkg-mate-team Alioth mailing list from Uploaders: field.
+  * debian/copyright:
+    + Make Upstream-Name: field's value more human readable.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 09 Jul 2018 08:00:17 +0200
+
+mate-tweak (18.04.16-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 05 Apr 2018 13:09:45 +0200
+
+mate-tweak (18.04.14-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 18 Mar 2018 17:44:47 +0100
+
+mate-tweak (18.04.11-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release. (LP: #1714799)
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 28 Feb 2018 16:17:18 +0100
+
+mate-tweak (18.04.10-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/copyright:
+    + Use secure URI for copyright format.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 15 Feb 2018 19:34:11 +0100
+
+mate-tweak (18.04.9-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Drop from D (mate-tweak): python-gobject2. (Closes: #888230).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 12 Feb 2018 11:16:38 +0100
+
+mate-tweak (18.04.6-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release. (LP: #1744565)
+  * debian/copyright:
+    + Update Source: URL.
+    + Update copyright attributions.
+  * debian/control:
+    + Correct Homepage URL.
+  * debian/control:
+    + Drop D (mate-tweak) metacity and xcompmgr. Neither are supported upstream
+      any more.
+
+  [ Mike Gabriel ]
+  * lintian: Drop unused override (desktop-command-not-in-package
+    usr/share/applications/metacity-no-composite.desktop metacity).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 23 Jan 2018 02:13:43 +0100
+
+mate-tweak (18.04.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+
+  [ Vangelis Mouhtsis ]
+  * debian/control:
+    + Temporarily have pkg-mate-team ML under Uploaders:.
+    + Update Maintainer: field to debian-mate ML on lists.debian.org.
+    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+
+  [ Mike Gabriel ]
+  * debian/{control,compat}:
+    + Bump DH version level to 11.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 18 Jan 2018 16:21:15 +0100
+
+mate-tweak (18.04.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release. (LP: #1724980, #1726479)
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.1.3. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 05 Jan 2018 23:24:50 +0100
+
+mate-tweak (18.04.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release. (LP: #1723823)
+  * debian/control:
+    + Bump Standards-Version: to 4.1.1. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 25 Nov 2017 18:02:50 +0100
+
+mate-tweak (17.10.15-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 12 Sep 2017 09:50:10 +0200
+
+mate-tweak (17.10.14-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 30 Aug 2017 14:32:51 +0200
+
+mate-tweak (17.10.13-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Promote compton from Suggests: to Recommends: again after
+      discussing this with upstream. (Closes: #828698).
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 23 Aug 2017 15:38:48 +0200
+
+mate-tweak (17.10.12-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release. (LP: #1706810, #1708845, #1711392)
+  * debian/control:
+    + Replace D mate-desktop-common with mate-panel. (LP: #1583381)
+
+  [ Mike Gabriel ]
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/control:
+    + De-promote compton from Depends: to Suggests:. (Closes: #828698).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 22 Aug 2017 21:01:13 +0200
+
+mate-tweak (17.10.9-2) unstable; urgency=medium
+
+  * debian/control:
+    + Add D (mate-tweak): python3-gi. (Closes: #867976).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 01 Aug 2017 18:38:17 -0400
+
+mate-tweak (17.10.9-1) unstable; urgency=medium
+
+  [ Aron Xu ]
+  * New upstream release.
+
+  [ Martin Wimpress ]
+  * debian/control:
+    - Update Depends: and Recommends: to reference MATE 1.16.
+    - Update Suggests: to include indicator-power.
+
+  [ Vangelis Mouhtsis ]
+  * debian/watch:
+    + Update URL for Github.
+  * debian/control:
+    + Update homepage.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/control:
+    + Bump Standards-Version: to 4.0.0. No changes needed.
+  * debian/control:
+    + Drop D (mate-tweak) zenity.
+  * debian/control:
+    + Add S (mate-tweak) indicator-session.
+  * debian/control:
+    + Update MATE Desktop 1.18 requirements.
+  * debian/control:
+    + Bump debhelper version to (>= 10.3~).
+  * debian/compat:
+    + Update compat version.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 25 Jul 2017 10:25:58 +0200
+
+mate-tweak (16.10.5-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 07 Oct 2016 10:49:14 +0200
+
+mate-tweak (16.10.4-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Add to D (mate-tweak): python3-setproctitle.
+    + Add to S (mate-tweak): indicator-application, indicator-messages, indicator-sound.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 13 Jul 2016 15:52:21 +0200
+
+mate-tweak (16.10.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/changelog: New upstream release.
+  * debian/control:
+    + Versioned R (mate-tweak): mate-indicator-applet (>= 1.14.1).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 23 Jun 2016 21:06:17 +0200
+
+mate-tweak (16.10.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 12 Jun 2016 21:50:49 +0200
+
+mate-tweak (16.10.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Bump Standards: to 3.9.8. No changes needed.
+    + Versioned D: mate-desktop-common (>= 1.14)
+    + Add to D (mate-tweak): gir1.2-gtk-3.0.
+    + Processed with wrap-and-sort.
+    + Add to S (mate-tweak): xcompmgr.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 29 May 2016 14:23:23 +0200
+
+mate-tweak (3.5.10-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+    - Modified composited window manager .desktop files to add a phase
+      delayed startup. (LP:#1553070).
+    - Update translations.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 12 Apr 2016 22:23:23 +0200
+
+mate-tweak (3.5.9-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+    - Fix forced setting of the xcursor theme. (LP: #1563087)
+    - Fix psutil.AccessDenied crash. (LP: #1562843)
+    - Fix handling of "unknown" window managers. (LP: #1563037)
+    - Fix ordering of notebook entries. (LP: #1564957)
+    - Fix toggling of menu bar features. (LP: #1564959)
+    - Add translations for de_CH, es_419, sco, and zh-Hans.
+    - Update existing translations.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 01 Apr 2016 23:48:05 +0200
+
+mate-tweak (3.5.8-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+    - Misplacement of indicators and other applets when switching panel
+      layouts. (LP:#1557203).
+    - Don't render double shadows in GTK client-side decorated applications when
+      enabling the Compton compositor via MATE Tweak. (LP:#1558013).
+    - Provide a warning before changing Window Manager. (LP:#1549081).
+    - Don't let MATE Tweak move upward on changing of the window manager.
+      (LP:#1549076).
+    - Update translations.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 17 Mar 2016 14:12:43 +0100
+
+mate-tweak (3.5.7-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+    + Closes (LP: #1548011)
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards: to 3.9.7. No changes needed.
+    + Use encrypted URLs for Vcs-*: field.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 02 Mar 2016 16:21:49 +0100
+
+mate-tweak (3.5.6-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 24 Feb 2016 10:40:10 +0100
+
+mate-tweak (3.5.5-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debain/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 25 Jan 2016 16:42:50 +0100
+
+mate-tweak (3.5.4-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/copyright:
+    + Correct syntax-error-in-dep5-copyright.
+    + Updated copyright attributions.
+  * debian/control:
+    + Update dependencies for new upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 22 Jan 2016 10:45:45 +0100
+
+mate-tweak (3.5.3-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 31 Dec 2015 14:47:57 +0100
+
+mate-tweak (3.5.2a-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+    - Remove all deprecated GTK properties. (Closes: #797033)
+    - Fix switching to Metacity so the currently selected theme is
+      retained. (LP: #1500882)
+    - Fix CTRL+C not closing MATE Tweak. (LP: #1500884)
+    - Fix Plank not being retained when saving a custom theme.
+      (LP: #1500885)
+    - Make irrelevant UI element insensitive rather than hiding them.
+      (LP: #1500886)
+    - Fix leaving multiple volume applets enabled when switching panel
+      layouts. (LP: #1500919)
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 30 Sep 2015 05:14:28 +0200
+
+mate-tweak (3.5.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+    - Fix Mutter support.
+    - Fix panel backup.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 26 Aug 2015 20:45:08 +0200
+
+mate-tweak (3.5.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream relese.
+    - Migrate to Python 3.3+
+    - Add support for Fedora and Mageia panel layouts.
+    - Improve detection and modification of org.gnome.desktop and
+      org.gnome.metacity gschema.
+    - Update xcursor icon-theme when switching to Window Manager to
+      preserve MATE xcursor preferences.
+    - Update translations.
+    - Remove some deprecated GTK properties.
+  * debian/control:
+    + Add missing dependency gir1.2-notify-0.7. (Closes: #795615, LP:#1478163).
+    + Process with wrap-and-sort.
+
+  [ Mike Gabriel ]
+  * Use pybuild build system (with PYBUILD_SYSTEM=distutils).
+  * debian/patches:
+    + Add 1001_python3-shebangs.patch. Make sure python3 gets used with
+      mate-tweak.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 24 Aug 2015 12:36:35 +0200
+
+mate-tweak (3.5.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+    - Improve saving and restoring of custom panel layouts.
+    - Improve UI for selecting panel layouts and features.
+    - Add support for Metacity 3.16.
+    - Add support for Compiz 0.9.12.1.
+    - Add UI to toggle window snapping in Marco and Metacity.
+    - Update PolicyKit actions.
+    - Update translations.
+    - Minor UI refactor.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 23 Jul 2015 14:04:52 +0200
+
+mate-tweak (3.4.9-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+    - Added button to save panel layouts.
+    - Added button to reset Compiz settings.
+    - Added support for Metacity and Mutter.
+    - Added support Maximus.
+    - Added support for Netbook layouts.
+    - Added notifications for window manager switching and layout saving.
+    - Improved layout and window manager switching.
+    - Renamed Eleven layouts to Cupertino.
+    - Updated UI to remove/replace deprecated methods.
+    - Updated translations.
+    - Fixed Compiz thumbnail viewport (LP: #1437611)
+  * debian/copyright:
+    + Updated/corrected copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 19 May 2015 15:09:05 +0200
+
+mate-tweak (3.4.8-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+    - Updated translations.
+    - Fixes gtk-window-decorator switching themes incorrectly when Compiz
+      is enabled.
+  * debian/copyright:
+    + Update copyright attribution for translators.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 07 Apr 2015 21:33:14 +0200
+
+mate-tweak (3.4.6-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+    - Fixed detection of mate-menu. (LP: #1430045)
+    - Determines if the video device is Compiz capable rather than
+      assuming so. (LP: #1430210)
+
+  [ Mike Gabriel ]
+  * debian/{control,copyright}:
+    + Update homepage / source URL.
+  * debian/control:
+    + Add to B-D: dh-python.
+  * debian/watch:
+    + Update URL (flexiondotorg -> ubuntu-mate).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 25 Mar 2015 15:47:13 +0100
+
+mate-tweak (3.4.5-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+    - Add translations
+  * debian/copyright:
+    + Add translators to copyright.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 04 Mar 2015 09:59:26 +0100
+
+mate-tweak (3.4.4-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+    - Ensure that the users autostart directory exists.
+    - Migrate to subprocess.Popen(), replacing the deprecated
+      commands.getoutput().
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 25 Feb 2015 12:11:31 +0100
+
+mate-tweak (3.4.3-1) unstable; urgency=medium
+
+  * Initial release (Closes: #776958).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 19 Feb 2015 16:13:13 +0100
