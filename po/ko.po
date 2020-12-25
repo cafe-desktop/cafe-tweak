@@ -46,7 +46,7 @@ msgid "Marco (Adaptive compositor)"
 msgstr "마로코 (반응형 컴포지터)"
 
 #: ../mate-tweak:1222
-msgid "Marco (Compton GPU compositor)"
+msgid "Marco (Picom GPU compositor)"
 msgstr "마르코 (컴프톤 GPU 컴포지터)"
 
 #: ../mate-tweak:1224

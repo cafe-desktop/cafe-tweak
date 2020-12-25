@@ -50,8 +50,8 @@ msgid "Marco (Adaptive compositor)"
 msgstr "Marco (コンポジット有効)"
 
 #: ../mate-tweak:1222
-msgid "Marco (Compton GPU compositor)"
-msgstr "Compton (GPUコンポジット)"
+msgid "Marco (Picom GPU compositor)"
+msgstr "Picom (GPUコンポジット)"
 
 #: ../mate-tweak:1224
 msgid "Compiz (Advanced GPU accelerated desktop effects)"

@@ -43,7 +43,7 @@ msgid "Marco (Adaptive compositor)"
 msgstr ""
 
 #: ../mate-tweak:1222
-msgid "Marco (Compton GPU compositor)"
+msgid "Marco (Picom GPU compositor)"
 msgstr ""
 
 #: ../mate-tweak:1224

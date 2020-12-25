@@ -56,8 +56,8 @@ msgid "Marco (Adaptive compositor)"
 msgstr "Marco (адаптивный композитный менеджер)"
 
 #: ../mate-tweak:1222
-msgid "Marco (Compton GPU compositor)"
-msgstr "Marco (композитный менеджер Compton GPU)"
+msgid "Marco (Picom GPU compositor)"
+msgstr "Marco (композитный менеджер Picom GPU)"
 
 #: ../mate-tweak:1224
 msgid "Compiz (Advanced GPU accelerated desktop effects)"

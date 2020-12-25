@@ -58,8 +58,8 @@ msgid "Marco (Adaptive compositor)"
 msgstr "Marco (adaptacyjne składanie)"
 
 #: ../mate-tweak:1222
-msgid "Marco (Compton GPU compositor)"
-msgstr "Marco (składanie Compton za pomocą karty graficznej)"
+msgid "Marco (Picom GPU compositor)"
+msgstr "Marco (składanie Picom za pomocą karty graficznej)"
 
 #: ../mate-tweak:1224
 msgid "Compiz (Advanced GPU accelerated desktop effects)"

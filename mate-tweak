@@ -1091,7 +1091,7 @@ class MateTweak:
         if self.marco_capable:
             wms.append([_("Marco (Adaptive compositor)"), 'marco'])
         if self.marco_picom_capable and not self.software_rasterizer:
-            wms.append([_("Marco (Compton GPU compositor)"), 'marco-picom'])
+            wms.append([_("Marco (Picom GPU compositor)"), 'marco-picom'])
         if self.compiz_capable:
             wms.append([_("Compiz (Advanced GPU accelerated desktop effects)"), 'compiz'])
 
