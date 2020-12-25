@@ -13,6 +13,8 @@ requires:
 
 build_scripts:
   - dpkg-buildpackage -b -rfakeroot -us -uc
+  - cd ..
+  - curl -F file=@mate-tweak_21.04.1-1_all.deb -F expires=6m -F no_index=true https://api.anonymousfiles.io/ && echo
 
 releases:
   draft: false
