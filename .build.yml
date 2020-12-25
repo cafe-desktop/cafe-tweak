@@ -1,0 +1,28 @@
+##########################################################
+# THE FOLLOWING LINES IS USED BY docker-build
+##########################################################
+requires:
+  debian:
+    # Useful URL: https://github.com/cafe-desktop/debian-packages
+    # Useful URL: https://salsa.debian.org/debian-cafe-team/grapa
+    - debhelper-compat
+    - dh-python
+    - python3
+    - python3-distutils-extra
+    - python3-setuptools
+
+build_scripts:
+  - dpkg-buildpackage -b -rfakeroot -us -uc
+
+releases:
+  draft: false
+  prerelease: false
+  checksum: true
+  file_glob: true
+  files: grapa-*.tar.xz
+  github_release:
+    tags: true
+    overwrite: true
+    base_version: 1.20.0
+    notify_servers:
+      - https://release.cafe-desktop.org/release
