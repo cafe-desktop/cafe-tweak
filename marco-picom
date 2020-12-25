@@ -9,10 +9,10 @@ if [ ! -x $(which ${WM}) ] && [ ! -x $(which picom) ]; then
     exit 1
 fi
 
-COMPTON_PIDS=$(pidof picom)
+PICOM_PIDS=$(pidof picom)
 if [ $? -eq 0 ]; then
     echo "Killing picom"
-    for PID in ${COMPTON_PIDS}; do
+    for PID in ${PICOM_PIDS}; do
         kill -9 ${PID}
     done
 fi
