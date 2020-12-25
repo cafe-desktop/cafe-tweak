@@ -4,14 +4,14 @@ WM=marco
 BACKEND="glx"
 VSYNC="opengl-swc"
 
-if [ ! -x $(which ${WM}) ] && [ ! -x $(which compton) ]; then
-    echo "ERROR! Can't find required components for ${WM} and compton."
+if [ ! -x $(which ${WM}) ] && [ ! -x $(which picom) ]; then
+    echo "ERROR! Can't find required components for ${WM} and picom."
     exit 1
 fi
 
-COMPTON_PIDS=$(pidof compton)
+COMPTON_PIDS=$(pidof picom)
 if [ $? -eq 0 ]; then
-    echo "Killing compton"
+    echo "Killing picom"
     for PID in ${COMPTON_PIDS}; do
         kill -9 ${PID}
     done
@@ -23,11 +23,11 @@ sleep 0.3
 
 # Allow users to override the defaults by creating their own config
 # for this wrapper.
-if [ -f ${HOME}/.config/${WM}-compton.conf ]; then
-    compton \
-        --config ${HOME}/.config/${WM}-compton.conf &
+if [ -f ${HOME}/.config/${WM}-picom.conf ]; then
+    picom \
+        --config ${HOME}/.config/${WM}-picom.conf &
 else
-    compton \
+    picom \
         --config /dev/null \
         --backend ${BACKEND} \
         --vsync ${VSYNC} \
@@ -55,7 +55,7 @@ else
         --shadow-exclude "name = 'Plank'" \
         --shadow-exclude "name = 'Docky'" \
         --shadow-exclude "name = 'Kupfer'" \
-        --shadow-exclude "name *= 'compton'" \
+        --shadow-exclude "name *= 'picom'" \
         --shadow-exclude "class_g = 'albert'" \
         --shadow-exclude "class_g = 'Conky'" \
         --shadow-exclude "class_g = 'Kupfer'" \
