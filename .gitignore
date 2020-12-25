@@ -1,0 +1,5 @@
+.bzr
+.bzrignore
+build
+dist
+*.egg-info
