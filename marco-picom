@@ -35,7 +35,6 @@ else
         --detect-client-leader \
         --detect-transient \
         --detect-client-opacity \
-        --paint-on-overlay \
         --glx-no-stencil \
         --glx-swap-method undefined \
         --unredir-if-possible \
